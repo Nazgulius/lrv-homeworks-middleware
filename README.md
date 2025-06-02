@@ -1,1 +1,3 @@
-# lrv-homeworks-middleware
+# Домашнее задание к занятию «1.3. Laravel. Middleware. Авторизация.»  
+
+## Задание 2. Авторизация  
