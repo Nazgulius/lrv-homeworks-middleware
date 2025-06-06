@@ -18,7 +18,7 @@ class CheckIsLogin
     {
       $user = Auth::user();
       if ($user !== null && !$user->is_login) {
-        return abort(403);
+        abort(403, 'abort 403');
       }
       return $next($request);
     }
