@@ -17,7 +17,7 @@ class CheckIsLogin
     public function handle(Request $request, Closure $next): Response
     {
       $user = Auth::user();
-      if (!$user->is_login) {
+      if ($user !== null && !$user->is_login) {
         return abort(403);
       }
       return $next($request);
