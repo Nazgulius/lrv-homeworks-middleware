@@ -1,5 +1,5 @@
 <?php
-ob_start();
+// ob_start();
 define('LARAVEL_START', microtime(true));
 
 use Illuminate\Foundation\Application;
@@ -22,4 +22,4 @@ $app = require __DIR__.'/../bootstrap/app.php';
 $response = $app->handle(Request::capture());
 $response->send();
 
-ob_end_clean();
+// ob_end_clean();
